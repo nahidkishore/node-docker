@@ -1,0 +1,14 @@
+docker build .
+docker image ls ( show all image list)
+docker image rm image id (for delete specific image)
+docker build -t nahid0002/node-app-image .
+docker run nahid0002/node-app-image (after runnung docker , browser localhost didn't work)
+docker run -p 3000:3000 nahid0002/node-app-image (Yess!!! now browser localhost properly working )
+docker ps
+docker rm node-app -f 
+docker kill container id 
+for windows show path location----
+  docker run -v %cd%:/app -p 3000:3000  (cmd shell) 
+  docker run -v ${pwd}:/app -p 3000:3000  (power shell)
+  docker run -v %cd%:/app -p 3000:3000  (cmd shell)
+  docker run -v $(pwd):/app -p 3000:3000  (mac/linux)
